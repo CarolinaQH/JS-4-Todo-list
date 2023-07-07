@@ -1,0 +1,34 @@
+.container {
+    background-color:rgb(221, 174, 210);
+    width: 95%;
+}
+
+.subcontainer {
+    display: flex;
+}
+
+
+input {
+    width: 95%;
+    height: 40px;
+}
+
+.subcontainer button, .button_container button {
+    background-color:rgb(94, 131, 140);
+    border: none;
+    height: 40px;
+    border-radius: 6%;
+}
+
+ul {
+    list-style: none;
+}
+
+td input {
+    line-height: 10px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: end;
+}

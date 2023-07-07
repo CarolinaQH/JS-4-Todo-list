@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/75051722b7.js" crossorigin="anonymous"></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Todo List</h1>
+        <hr >
+        <h3>Nueva tarea</h3>
+
+        
+        <div class="subcontainer">
+            <input id="input_task">
+            <button id="add_task" class="text-white ms-1" onclick="addTask()">Agregar</button>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="col-sm-5 col-md-6">
+                <ul class="ps-0">
+                    <li>Total: <strong id="total_tasks">0</strong></li>
+                    <li>Realizadas: <strong id="number_completed_tasks">0</strong></li>
+                </ul>
+            </div>
+
+            
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">    
+                <table id="table_tasks">
+                    <tr>
+                        <th class="pe-5">ID</th>
+                        <th class="pe-5">Tarea</th>
+                        <th class="pe-5">Listo</th>
+                        <!-- <th class="pe-5">Falta</th> -->
+                    </tr>                    
+                </table>                               
+            </div>
+        </div>
+
+
+        <div class="button_container">
+            <button class="text-white" onclick="colorCompleted()">Guardar</button>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/index.js"></script>
+
+    
+</body>
+</html>
